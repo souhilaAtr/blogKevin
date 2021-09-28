@@ -1,0 +1,501 @@
+@font-face {
+    font-family: myfont;
+    src: url(assets/font/Raleway-Light.ttf);
+}
+
+* {
+    font-family: myfont;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    border-top: solid 2px;
+    background-color: rgb(221, 221, 221);
+}
+
+header{
+    width: 100%;
+    height: 18vh;
+}
+
+header h1{
+    text-align: center;
+    margin: 1%;
+}
+
+header p{
+    text-align: center;
+}
+
+header p span{
+    background-color: black;
+    color: white;
+    padding: 0.4%;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+main .block1{
+    width: 60%;
+}
+
+main .block2{
+    width: 30%;
+}
+
+.block1 img{
+    width: 100%;
+}
+
+.block1 h1{
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.block1 p{
+    padding: 15px;
+}
+
+.comment{
+    display: inline-block;
+    width: 12%;
+    margin-left: 65%;
+}
+
+.comment span{
+    background-color: black;
+    color: white;
+    padding: 0 7px;
+}
+
+.comment .rond{
+    border-radius: 45%;
+}
+
+.block1 button{
+    padding: 15px;
+    margin-left: 1.5%;
+}
+
+.titleheading,
+.blogentry{
+    margin: 30px 0;
+    padding-bottom: 20px;
+    box-shadow: 0px -1px 20px -3px rgba(0,0,0,0.75);
+}
+
+.block2 .avatar{
+    margin: 30px 0;
+    box-shadow: 0px -1px 20px -3px rgba(0,0,0,0.75);
+}
+
+.block2 .avatar img{
+    width: 100%;
+}
+
+.block2 .avatar h2{
+    padding: 15px;
+}
+
+.block2 .avatar p{
+    padding: 15px;
+}
+
+.posts{
+    box-shadow: 0px -1px 20px -3px rgba(0,0,0,0.75);
+}
+
+.block2 .posts .popular1{
+    background-color: rgb(200, 200, 200);
+}
+
+.block2 .posts .popular1 .popular2{
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.block2 .posts .workshop{
+    border-bottom: 2px solid rgb(194, 194, 194);
+    padding: 15px;
+}
+
+.block2 img{
+    width: 15%;
+}
+
+.block2 p{
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.block2 .posts .gondol{
+    border-bottom: 2px solid rgb(194, 194, 194);
+    padding: 15px;
+}
+
+.block2 .posts .skies{
+    border-bottom: 2px solid rgb(194, 194, 194);
+    padding: 15px;
+}
+
+.block2 .posts .rock{
+    padding: 15px;
+}
+
+.block2 .tag{
+    box-shadow: 0px -1px 20px -3px rgba(0,0,0,0.75);
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.block2 .tag .tagname{
+    background-color: rgb(200, 200, 200);
+}
+
+.block2 .tag .tagname p{
+    font-weight: bold;
+    padding: 15px;
+}
+
+.block2 .tag .tagname2 .tagcolor,
+.block2 .tag .tagname3 .tagcolor,
+.block2 .tag .tagname4 .tagcolor{
+    background-color: rgb(206, 206, 206);
+    color: black;
+    padding: 4px;
+}
+
+.block2 .tag .tagname2,
+.block2 .tag .tagname3,
+.block2 .tag .tagname4{
+    margin: 3%;
+}
+
+.block2 .tag .tagname2 .tagcolor:hover,
+.block2 .tag .tagname3 .tagcolor:hover,
+.block2 .tag .tagname4 .tagcolor:hover{
+    background-color: black;
+    color: white;  
+}
+
+footer{
+    background-color: rgb(75, 75, 75);
+    height: 15vh;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+
+footer button{
+    padding: 10px;
+    background-color: gray;
+    border: none;
+    color: rgb(170, 170, 170);
+}
+
+footer .prev:valid,
+footer .next:hover{
+    background-color: black;
+    color: white;
+}
+
+footer .prev:hover{
+    background-color: rgb(179, 179, 179);
+    color: white;
+}
+
+
+footer p{
+    margin-top: 2%;
+    color: white;
+}
+
+/* section responsive pour téléphone*/
+@media only screen and (max-width: 600px) {
+    main{
+        flex-direction: column-reverse;
+    }
+    main .block1{
+        width: 100%;
+    }
+    main .block2{
+        width: 100%;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header p span{
+        display: block;
+        width: 60%;
+        margin-left: 20%;
+    } 
+    .block2 .avatar p{
+        padding: 15px;
+        margin-left: 0%;
+    }
+    .comment{
+        display: inline-block;
+        width: 28%;
+        margin-left: 25%;
+    }
+    .block1 button{
+        margin-left: 3.7%;
+    }
+    .block1 h1{
+        margin-left: 2%;
+    }
+}
+
+/* section responsive pour tablette*/
+@media only screen and (min-width: 601px)  and (max-width:991px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main .block1{
+        width: 100%;
+    }
+    main .block2{
+        width: 100%;
+    }
+    .avatar{
+        position: absolute;
+        top: 9%;
+        height: 10vh;
+        width: 100%;
+        padding: 2%;
+        background-color: white;
+        box-shadow: none;
+    }
+    .block2 .avatar img{
+        width: 25%;
+        height: 9.9vh;
+    }
+    .block2 .avatar h2{
+        display: none;
+    }
+    .block2 .avatar p{
+        width: 70%;
+        margin-left: 0%;
+        float: right;
+    }
+    header{
+        height: 24vh;
+    }
+    .comment{
+        width: 15%;
+        margin-left: 60%;
+    }
+}
+
+/* section responsive original */
+/* @media only screen and (min-width: 992px) {
+
+    header{
+        width: 100%;
+        height: 18vh;
+    }
+    
+    header h1{
+        text-align: center;
+        margin: 1%;
+    }
+    
+    header p{
+        text-align: center;
+    }
+    
+    header p span{
+        background-color: black;
+        color: white;
+        padding: 0.4%;
+    }
+    
+    main{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    main .block1{
+        width: 60%;
+    }
+    
+    main .block2{
+        width: 30%;
+    }
+    
+    .block1 img{
+        width: 100%;
+    }
+    
+    .block1 h1{
+        font-weight: bolder;
+        padding: 5px;
+    }
+    
+    .block1 p{
+        padding: 15px;
+    }
+    
+    .comment{
+        display: inline-block;
+        width: 12%;
+        margin-left: 65%;
+    }
+    
+    .comment span{
+        background-color: black;
+        color: white;
+        padding: 0 7px;
+    }
+    
+    .comment .rond{
+        border-radius: 45%;
+    }
+    
+    .block1 button{
+        padding: 15px;
+        margin-left: 1.5%;
+    }
+    
+    .titleheading,
+    .blogentry{
+        margin: 30px 0;
+        padding-bottom: 20px;
+        box-shadow: 0px -1px 20px -3px rgba(0,0,0,0.75);
+    }
+    
+    .block2 .avatar{
+        margin: 30px 0;
+        box-shadow: 0px -1px 20px -3px rgba(0,0,0,0.75);
+    }
+    
+    .block2 .avatar img{
+        width: 100%;
+    }
+    
+    .block2 .avatar h2{
+        padding: 15px;
+    }
+    
+    .block2 .avatar p{
+        padding: 15px;
+    }
+    
+    .posts{
+        box-shadow: 0px -1px 20px -3px rgba(0,0,0,0.75);
+    }
+    
+    .block2 .posts .popular1{
+        background-color: rgb(200, 200, 200);
+    }
+    
+    .block2 .posts .popular1 .popular2{
+        padding: 15px;
+        font-weight: bolder;
+    }
+    
+    .block2 .posts .workshop{
+        border-bottom: 2px solid rgb(194, 194, 194);
+        padding: 15px;
+    }
+    
+    .block2 img{
+        width: 15%;
+    }
+    
+    .block2 p{
+        display: inline-block;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    
+    .block2 .posts .gondol{
+        border-bottom: 2px solid rgb(194, 194, 194);
+        padding: 15px;
+    }
+    
+    .block2 .posts .skies{
+        border-bottom: 2px solid rgb(194, 194, 194);
+        padding: 15px;
+    }
+    
+    .block2 .posts .rock{
+        padding: 15px;
+    }
+    
+    .block2 .tag{
+        box-shadow: 0px -1px 20px -3px rgba(0,0,0,0.75);
+        margin-top: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .block2 .tag .tagname{
+        background-color: rgb(200, 200, 200);
+    }
+    
+    .block2 .tag .tagname p{
+        font-weight: bold;
+        padding: 15px;
+    }
+    
+    .block2 .tag .tagname2 .tagcolor,
+    .block2 .tag .tagname3 .tagcolor,
+    .block2 .tag .tagname4 .tagcolor{
+        background-color: rgb(206, 206, 206);
+        color: black;
+        padding: 4px;
+    }
+    
+    .block2 .tag .tagname2,
+    .block2 .tag .tagname3,
+    .block2 .tag .tagname4{
+        margin: 3%;
+    }
+    
+    .block2 .tag .tagname2 .tagcolor:hover,
+    .block2 .tag .tagname3 .tagcolor:hover,
+    .block2 .tag .tagname4 .tagcolor:hover{
+        background-color: black;
+        color: white;  
+    }
+    
+    footer{
+        background-color: rgb(75, 75, 75);
+        height: 15vh;
+        padding-left: 15px;
+        padding-top: 30px;
+    }
+    
+    footer button{
+        padding: 10px;
+        background-color: gray;
+        border: none;
+        color: rgb(170, 170, 170);
+    }
+    
+    footer .prev:valid,
+    footer .next:hover{
+        background-color: black;
+        color: white;
+    }
+    
+    footer .prev:hover{
+        background-color: rgb(179, 179, 179);
+        color: white;
+    }
+    
+    
+    footer p{
+        margin-top: 2%;
+        color: white;
+    }
+} */
